@@ -1,7 +1,7 @@
-const Employee = require("../lib/Engineer");
+const Engineer = require("../lib/Engineer");
 
 describe("Engineer", () => {
-    const engineer = new Engineer("Engineer Name", "111", "engineer@test.com");
+    const engineer = new Engineer("Engineer Name", "111", "engineer@test.com", "Engineer111");
 
     it("returns Engineer", () => {
         const expected = "Engineer";
@@ -9,15 +9,15 @@ describe("Engineer", () => {
         expected(result).toEqual(expected);
     });
 
-    it ("returns engineer id 111", () => {
-        const expected = "111";
-        const result = engineer.getId(); 
-        expected(result).toEqual(expected);
-    });
-
     it ("returns engineer name", () => {
         const expected = "Engineer Name";
         const result = engineer.getName();
+        expected(result).toEqual(expected);
+    });
+
+    it ("returns engineer id 111", () => {
+        const expected = "111";
+        const result = engineer.getId(); 
         expected(result).toEqual(expected);
     });
 
@@ -28,8 +28,8 @@ describe("Engineer", () => {
     });
 
     it ("returns engineer github user name", () => {
-        const expected = "Engineer111-1";
-        const result = engineer.getEmail();
+        const expected = "Engineer111";
+        const result = engineer.getGithub();
         expected(result).toEqual(expected);
     });    
 })

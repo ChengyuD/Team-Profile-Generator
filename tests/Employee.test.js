@@ -9,15 +9,15 @@ describe("Employee", () => {
         expected(result).toEqual(expected);
     });
 
-    it ("returns employee id 121", () => {
-        const expected = "121";
-        const result = employee.getId();
-        expected(result).toEqual(expected);
-    });
-
     it ("returns employee name", () => {
         const expected = "Employee Name";
         const result = employee.getName();
+        expected(result).toEqual(expected);
+    });
+
+    it ("returns employee id 121", () => {
+        const expected = "121";
+        const result = employee.getId();
         expected(result).toEqual(expected);
     });
 

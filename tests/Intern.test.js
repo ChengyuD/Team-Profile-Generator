@@ -1,29 +1,35 @@
-const Employee = require("../lib/Intern");
+const Intern = require("../lib/Intern");
 
 describe("Intern", () => {
-    const employee = new Employee("Intern Name", "131", "intern@test.com", "Intern School");
+    const intern = new Intern("Intern Name", "131", "intern@test.com", "Intern School");
 
     it("returns intern", () => {
-        const expected = "Employee";
-        const result = employee.getRole();
+        const expected = "Intern";
+        const result = intern.getRole();
         expected(result).toEqual(expected);
     });
 
-    it ("returns employee id 121", () => {
-        const expected = "121";
-        const result = employee.getId();
+    it ("returns intern name", () => {
+        const expected = "Intern Name";
+        const result = intern.getName();
         expected(result).toEqual(expected);
     });
 
-    it ("returns employee name", () => {
-        const expected = "Employee Name";
-        const result = employee.getName();
+    it ("returns intern id 131", () => {
+        const expected = "131";
+        const result = intern.getId();
+        expected(result).toEqual(expected);
+    });
+    
+    it ("returns intern email", () => {
+        const expected = "intern@test.com";
+        const result = intern.getEmail();
         expected(result).toEqual(expected);
     });
 
-    it ("returns employee email", () => {
-        const expected = "employe@test.com";
-        const result = employee.getEmail();
+    it ("returns intern school", () => {
+        const expected = "intern school";
+        const result = intern.getSchool();
         expected(result).toEqual(expected);
     });
 })
