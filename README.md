@@ -28,7 +28,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Languages and Technologies
 * npm i
-* npm run test
+* node index.js
 * OOP
 
 
@@ -40,3 +40,4 @@ MIT
 
 
 ## Video Demo
+https://drive.google.com/file/d/1gUrbpuppBetBgMlScrcmLw6Jvhh17oLD/view
