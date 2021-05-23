@@ -1,12 +1,14 @@
 # Team-Profile-Generator
 
 ## User Story
+```
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
 SO THAT I have quick access to their emails and GitHub profiles
-
+```
 
 ## Acceptance Criteria
+```
 GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on user input
@@ -24,9 +26,9 @@ WHEN I select the intern option
 THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
 WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
+```
 
-
-## Languages and Technologies
+## Languages, Install and Test
 * npm i
 * node index.js
 * OOP
@@ -37,6 +39,8 @@ MIT
 
 
 ## Screenshot
+![image](https://user-images.githubusercontent.com/80147201/119252274-1e079500-bb60-11eb-9a7a-7ff8854a700e.png)
+
 
 
 ## Video Demo
